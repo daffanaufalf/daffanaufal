@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #171717;
+}
+
+.rounded-full {
+    border-radius: 100px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .container-fluid {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container-fluid {
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container-fluid {
+        padding-right: 140px;
+        padding-left: 140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-xxl {
+        max-width: 1420px;
+    }
+}
+
+/*  */
+
+/* Padding */
+
+.pt-16 {
+    padding-top: 1rem;
+}
+
+.pt-32 {
+    padding-top: 2rem;
+}
+
+.pb-32 {
+    padding-top: 2rem;
+}
+
+.pt-40 {
+    padding-top: 2.5rem;
+}
+
+.pt-96 {
+    padding-top: 6rem;
+}
+
+.pt-24 {
+    padding-top: 1.5rem;
+}
+
+.ps-48 {
+    padding-left: 3rem;
+}
+
+/*  */
+
+/* Margin */
+.mt-32 {
+    margin-top: 2rem;
+}
+
+.mb-32 {
+    margin-bottom: 2rem;
+}
+
+.mt-40 {
+    margin-top: 2.5rem;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    /* Padding */
+    .pt-lg-100 {
+        padding-top: 6.25rem;
+    }
+
+    .pb-lg-100 {
+        padding-bottom: 6.25rem;
+    }
+
+    .pt-lg-227 {
+        padding-top: 14.188rem;
+    }
+
+    .pb-lg-227 {
+        padding-bottom: 14.188rem;
+    }
+
+    .pe-lg-60 {
+        padding-right: 3.75rem;
+    }
+
+    .ps-lg-60 {
+        padding-left: 3.75rem;
+    }
+
+    .pt-lg-60 {
+        padding-top: 3.75rem;
+    }
+
+    .pt-lg-145 {
+        padding-top: 9.063rem;
+    }
+
+    .pb-lg-145 {
+        padding-bottom: 9.063rem;
+    }
+
+    .pt-lg-40 {
+        padding-top: 2.5rem;
+    }
+
+    .pb-lg-40 {
+        padding-bottom: 2.5rem;
+    }
+
+    .pt-lg-50 {
+        padding-top: 3.125rem;
+    }
+
+    .pb-lg-50 {
+        padding-bottom: 3.125rem;
+    }
+
+    /*  */
+
+
+    /* Margin */
+    .me-lg-35 {
+        margin-right: 2.2rem;
+    }
+
+    .ms-lg-35 {
+        margin-left: 2.2rem;
+    }
+
+    .me-lg-20 {
+        margin-right: 1.25rem;
+    }
+
+    .ms-lg-40 {
+        margin-left: 2.5rem;
+    }
+
+    /*  */
+}
+
+/* Gap */
+.gap-3 {
+    gap: 3rem !important;
+}
+
+/*  */
+
+/* Font */
+
+.text-lg {
+    font-family: 'Clash Display';
+    font-size: 0.875rem;
+    line-height: 1.4rem;
+}
