@@ -19,7 +19,7 @@ body {
 
 
 /* Small devices (landscape phones, 375px and up) */
-@media (min-width: 375px) {
+@media (min-width: 275px) {
     .container-fluid {
         padding-right: 16px;
         padding-left: 16px;
