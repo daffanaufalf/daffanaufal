@@ -12,6 +12,14 @@
       integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+      integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JQuery -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/home.css" />
@@ -41,6 +49,25 @@
               />
             </svg>
           </a>
+          <div>
+            <div class="cta navbar-toggler">
+              <div
+                class="toggle-btn type17"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              ></div>
+            </div>
+          </div>
+          <script>
+            $(document).ready(function () {
+              $(document).on("click", ".cta", function () {
+                $(this).toggleClass("active");
+              });
+            });
+          </script>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav text-lg ps-48 gap-3">
               <li class="nav-item my-auto">
@@ -58,46 +85,60 @@
                 <a class="nav-link" href="about.html">ABOUT</a>
               </li>
             </ul>
+            <div class="social-media-icon ms-auto">
+              <ul class="navbar-nav gap-3">
+                <li class="nav-item my-auto">
+                  <a
+                    href="https://www.linkedin.com/in/daffanflf/"
+                    target="_blank"
+                  >
+                    <svg
+                      height="20"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.26898 28H0.463977V9.306H6.26898V28ZM3.36298 6.756C1.50698 6.756 0.000976562 5.218 0.000976562 3.362C0.000976562 1.506 1.50598 0 3.36298 0C5.21998 0 6.72498 1.505 6.72498 3.362C6.72498 5.218 5.21898 6.756 3.36298 6.756ZM27.995 28H22.203V18.9C22.203 16.731 22.159 13.95 19.185 13.95C16.167 13.95 15.704 16.306 15.704 18.744V28H9.90498V9.306H15.472V11.856H15.553C16.328 10.387 18.221 8.837 21.045 8.837C26.92 8.837 28 12.706 28 17.731V28H27.995Z"
+                        fill="#A3A3A3"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item my-auto">
+                  <a href="https://dribbble.com/daffanaufalf" target="_blank">
+                    <svg
+                      height="20"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14 28C6.28512 28 0 21.7149 0 14C0 6.28512 6.28512 0 14 0C21.7149 0 28 6.28512 28 14C28 21.7149 21.7149 28 14 28ZM25.8081 15.9145C25.3986 15.7859 22.1077 14.8024 18.3566 15.4035C19.9202 19.7015 20.5581 23.2015 20.6815 23.9304C23.3651 22.1165 25.2744 19.2404 25.8081 15.9145ZM18.6716 25.0241C18.494 23.9768 17.7966 20.321 16.1193 15.96L16.0422 15.9819C9.28813 18.3339 6.87312 23.0142 6.66313 23.4517C8.67825 25.0329 11.2341 25.9761 14 25.9761C15.6546 25.9761 17.2314 25.6392 18.6664 25.0276L18.6716 25.0241ZM5.11788 22.0159C5.3865 21.5469 8.66775 16.1184 14.8383 14.1225C14.9931 14.0691 15.1524 14.0236 15.3072 13.9816C15.0062 13.2983 14.6781 12.6192 14.3369 11.9542C8.36675 13.7358 2.57425 13.6631 2.051 13.6491L2.04662 14.014C2.04662 17.0861 3.20862 19.8931 5.11875 22.0115L5.11788 22.0159ZM2.2925 11.5666C2.83062 11.5763 7.756 11.5981 13.3481 10.1132C11.3663 6.58962 9.22862 3.62775 8.9145 3.19462C5.5685 4.77225 3.07212 7.85225 2.2925 11.5623V11.5666ZM11.2026 2.39312C11.5308 2.84025 13.7043 5.7925 15.659 9.39312C19.9106 7.80325 21.7149 5.38212 21.9301 5.07762C19.8153 3.19462 17.0397 2.06063 14 2.06063C13.0384 2.06063 12.0995 2.1735 11.2026 2.39312ZM23.2566 6.4575C23.0055 6.79437 21 9.36513 16.5795 11.1694C16.8569 11.7434 17.1264 12.3182 17.3731 12.9054C17.4685 13.1154 17.5455 13.3254 17.6278 13.5214C21.6073 13.02 25.5623 13.8267 25.9586 13.909C25.935 11.0836 24.9331 8.4945 23.2645 6.46187L23.2566 6.4575Z"
+                        fill="#A3A3A3"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item my-auto">
+                  <a href="https://github.com/daffanaufalf" target="_blank">
+                    <svg
+                      height="20"
+                      aria-hidden="true"
+                      viewBox="0 0 16 16"
+                      version="1.1"
+                      data-view-component="true"
+                    >
+                      <path
+                        d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
+                        fill="#A3A3A3"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <ul class="navbar-nav gap-3">
-            <li class="nav-item my-auto">
-              <a href="https://www.linkedin.com/in/daffanflf/" target="_blank">
-                <svg
-                  height="20"
-                  viewBox="0 0 28 28"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.26898 28H0.463977V9.306H6.26898V28ZM3.36298 6.756C1.50698 6.756 0.000976562 5.218 0.000976562 3.362C0.000976562 1.506 1.50598 0 3.36298 0C5.21998 0 6.72498 1.505 6.72498 3.362C6.72498 5.218 5.21898 6.756 3.36298 6.756ZM27.995 28H22.203V18.9C22.203 16.731 22.159 13.95 19.185 13.95C16.167 13.95 15.704 16.306 15.704 18.744V28H9.90498V9.306H15.472V11.856H15.553C16.328 10.387 18.221 8.837 21.045 8.837C26.92 8.837 28 12.706 28 17.731V28H27.995Z"
-                    fill="#A3A3A3"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li class="nav-item my-auto">
-              <a href="https://dribbble.com/daffanaufalf" target="_blank">
-                <svg
-                  height="20"
-                  viewBox="0 0 28 28"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M14 28C6.28512 28 0 21.7149 0 14C0 6.28512 6.28512 0 14 0C21.7149 0 28 6.28512 28 14C28 21.7149 21.7149 28 14 28ZM25.8081 15.9145C25.3986 15.7859 22.1077 14.8024 18.3566 15.4035C19.9202 19.7015 20.5581 23.2015 20.6815 23.9304C23.3651 22.1165 25.2744 19.2404 25.8081 15.9145ZM18.6716 25.0241C18.494 23.9768 17.7966 20.321 16.1193 15.96L16.0422 15.9819C9.28813 18.3339 6.87312 23.0142 6.66313 23.4517C8.67825 25.0329 11.2341 25.9761 14 25.9761C15.6546 25.9761 17.2314 25.6392 18.6664 25.0276L18.6716 25.0241ZM5.11788 22.0159C5.3865 21.5469 8.66775 16.1184 14.8383 14.1225C14.9931 14.0691 15.1524 14.0236 15.3072 13.9816C15.0062 13.2983 14.6781 12.6192 14.3369 11.9542C8.36675 13.7358 2.57425 13.6631 2.051 13.6491L2.04662 14.014C2.04662 17.0861 3.20862 19.8931 5.11875 22.0115L5.11788 22.0159ZM2.2925 11.5666C2.83062 11.5763 7.756 11.5981 13.3481 10.1132C11.3663 6.58962 9.22862 3.62775 8.9145 3.19462C5.5685 4.77225 3.07212 7.85225 2.2925 11.5623V11.5666ZM11.2026 2.39312C11.5308 2.84025 13.7043 5.7925 15.659 9.39312C19.9106 7.80325 21.7149 5.38212 21.9301 5.07762C19.8153 3.19462 17.0397 2.06063 14 2.06063C13.0384 2.06063 12.0995 2.1735 11.2026 2.39312ZM23.2566 6.4575C23.0055 6.79437 21 9.36513 16.5795 11.1694C16.8569 11.7434 17.1264 12.3182 17.3731 12.9054C17.4685 13.1154 17.5455 13.3254 17.6278 13.5214C21.6073 13.02 25.5623 13.8267 25.9586 13.909C25.935 11.0836 24.9331 8.4945 23.2645 6.46187L23.2566 6.4575Z"
-                    fill="#A3A3A3"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li class="nav-item my-auto">
-              <a href="https://github.com/daffanaufalf" target="_blank">
-                <svg height="20" aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true">
-    <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" fill="#A3A3A3"></path>
-</svg>
-              </a>
-            </li>
-          </ul>
         </div>
       </nav>
     </section>
@@ -159,21 +200,29 @@
           <hr class="divider-center" />
         </div>
         <div class="container-fluid social-media mt-32 mb-32">
-            <h5 class="connect">Let's Connect!
-                <a href="https://www.linkedin.com/in/daffanflf/" target="_blank" class="footer-link ps-48">LINKEDIN</a>
-                <a href="https://dribbble.com/daffanaufalf" target="_blank" class="footer-link ps-48">DRIBBBLE</a>
-                <a href="https://github.com/daffanaufalf" target="_blank" class="footer-link ps-48">GITHUB</a>
-            </h5>
-          </ul>
+          <h5 class="connect">
+            Let's Connect!
+            <a
+              href="https://www.linkedin.com/in/daffanflf/"
+              target="_blank"
+              class="footer-link ps-48"
+              >LINKEDIN</a
+            >
+            <a
+              href="https://dribbble.com/daffanaufalf"
+              target="_blank"
+              class="footer-link ps-48"
+              >DRIBBBLE</a
+            >
+            <a
+              href="https://github.com/daffanaufalf"
+              target="_blank"
+              class="footer-link ps-48"
+              >GITHUB</a
+            >
+          </h5>
         </div>
       </footer>
     </section>
-
-    <!-- Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
-      integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

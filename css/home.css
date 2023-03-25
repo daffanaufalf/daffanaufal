@@ -1,3 +1,92 @@
+.toggle-btn {
+    height: 2px;
+    width: 25px;
+    background-color: #fff;
+    position: relative;
+    top: 50%;
+    left: 0;
+    margin: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle-btn:before {
+    content: "";
+    height: 2px;
+    width: 25px;
+    box-shadow: 0 -10px 0 0 #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle-btn:after {
+    content: "";
+    height: 2px;
+    width: 25px;
+    box-shadow: 0 10px 0 0 #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.type17:before {
+    width: 12px;
+}
+
+.type17:after {
+    width: 12px;
+    box-shadow: 13px 10px 0 0 #fff;
+}
+
+.active .toggle-btn {
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.active .toggle-btn:before {
+    top: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.active .toggle-btn:after {
+    top: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.active .type17 {
+    transform: rotate(45deg);
+    background-color: #fff;
+    transition: all 0.6s ease-in-out;
+}
+
+.active .type17:before {
+    transform: translate(-4px, -6px) rotate(90deg);
+}
+
+.active .type17:after {
+    transform: translate(16px, -7px) rotate(90deg);
+}
+
+.active .type18 {
+    transform: rotate(-45deg);
+    background-color: #fff;
+    transition: all 0.6s ease-in-out;
+}
+
+.active .type18:before {
+    transform: translate(0, 0) rotate(90deg);
+}
+
+.active .type18:after {
+    transform: translate(0, 0) rotate(90deg);
+}
+
+.navbar-nav {
+    justify-content: space-between;
+}
+
 .navbar-nav .nav-link {
     letter-spacing: 0.1em;
     color: #fafafa;

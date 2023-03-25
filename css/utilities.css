@@ -11,11 +11,11 @@ body {
     border-radius: 100px;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+/* Small devices (landscape phones, 375px and up) */
+@media (min-width: 375px) {
     .container-fluid {
-        padding-right: 40px;
-        padding-left: 40px;
+        padding-right: 16px;
+        padding-left: 16px;
     }
 }
 
@@ -92,41 +92,6 @@ body {
 @media (min-width: 992px) {
 
     /* Padding */
-    .pt-lg-100 {
-        padding-top: 6.25rem;
-    }
-
-    .pb-lg-100 {
-        padding-bottom: 6.25rem;
-    }
-
-    .pt-lg-227 {
-        padding-top: 14.188rem;
-    }
-
-    .pb-lg-227 {
-        padding-bottom: 14.188rem;
-    }
-
-    .pe-lg-60 {
-        padding-right: 3.75rem;
-    }
-
-    .ps-lg-60 {
-        padding-left: 3.75rem;
-    }
-
-    .pt-lg-60 {
-        padding-top: 3.75rem;
-    }
-
-    .pt-lg-145 {
-        padding-top: 9.063rem;
-    }
-
-    .pb-lg-145 {
-        padding-bottom: 9.063rem;
-    }
 
     .pt-lg-40 {
         padding-top: 2.5rem;
@@ -134,14 +99,6 @@ body {
 
     .pb-lg-40 {
         padding-bottom: 2.5rem;
-    }
-
-    .pt-lg-50 {
-        padding-top: 3.125rem;
-    }
-
-    .pb-lg-50 {
-        padding-bottom: 3.125rem;
     }
 
     /*  */
