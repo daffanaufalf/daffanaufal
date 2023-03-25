@@ -177,25 +177,6 @@
         color: #fafafa;
     }
 
-    .navbar-nav .nav-link.active {
-        color: #fafafa;
-        background-color: #262626;
-        padding: 8px 16px;
-        font-style: normal;
-        font-weight: 400;
-    }
-
-    .header-title {
-        font-family: 'Plus Jakarta Sans';
-        color: #737373;
-        font-size: 3.5rem;
-        font-weight: 600;
-    }
-
-    .header-title span {
-        color: #fafafa;
-    }
-
     .header .btn-download {
         background-color: #262626;
         display: flex;
