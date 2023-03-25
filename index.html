@@ -49,23 +49,24 @@
               />
             </svg>
           </a>
-          <div class="cta">
-            <div
-              class="toggle-btn type17"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            ></div>
-          </div>
-          <script>
-            $(document).ready(function () {
-              $(document).on("click", ".cta", function () {
-                $(this).toggleClass("active");
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div class="navbar-toggler-icon type-primary"></div>
+            <script>
+              $(document).ready(function () {
+                $(document).on("click", ".navbar-toggler", function () {
+                  $(this).toggleClass("active");
+                });
               });
-            });
-          </script>
+            </script>
+          </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav text-lg ps-48 gap-3">
               <li class="nav-item my-auto">

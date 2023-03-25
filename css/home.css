@@ -1,103 +1,94 @@
-.block {
-    height: 60px;
-    width: 60px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    transition: all 1s ease;
+.navbar-toggler {
+    border: none;
 }
 
-.cta {
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
 }
 
-.toggle-btn {
+.navbar-toggler-icon {
     height: 2px;
     width: 25px;
-    background-color: #fff;
+    background-color: #fafafa;
     position: relative;
     top: 50%;
     left: 0;
     margin: auto;
     transition: all 0.3s ease-in-out;
+    background-image: none;
+    border-radius: 100%;
 }
 
-.toggle-btn:before {
+.navbar-toggler-icon:before {
     content: "";
     height: 2px;
     width: 25px;
-    box-shadow: 0 -10px 0 0 #fff;
+    box-shadow: 0 -10px 0 0 #fafafa;
     position: absolute;
     top: 0;
     left: 0;
     transition: all 0.3s ease-in-out;
+    border-radius: 100%;
 }
 
-.toggle-btn:after {
+.navbar-toggler-icon:after {
     content: "";
     height: 2px;
     width: 25px;
-    box-shadow: 0 10px 0 0 #fff;
+    box-shadow: 0 10px 0 0 #fafafa;
     position: absolute;
     top: 0;
     left: 0;
     transition: all 0.3s ease-in-out;
+    border-radius: 100%;
 }
 
-.type17:before {
+.type-primary:before {
     width: 12px;
+    border-radius: 100%;
 }
 
-.type17:after {
+.type-primary:after {
     width: 12px;
-    box-shadow: 13px 10px 0 0 #fff;
+    box-shadow: 13px 10px 0 0 #fafafa;
+    border-radius: 100%;
 }
 
-.active .toggle-btn {
+.active .navbar-toggler-icon {
     background-color: transparent;
     transition: all 0.2s ease-in-out;
+    border-radius: 100%;
+
 }
 
-.active .toggle-btn:before {
+.active .navbar-toggler-icon:before {
     top: 0;
     transition: all 0.3s ease-in-out;
+    border-radius: 100%;
 }
 
-.active .toggle-btn:after {
+.active .navbar-toggler-icon:after {
     top: 0;
     transition: all 0.3s ease-in-out;
+    border-radius: 100%;
 }
 
-.active .type17 {
+.active .type-primary {
     transform: rotate(45deg);
-    background-color: #fff;
+    background-color: #fafafa;
     transition: all 0.6s ease-in-out;
+    border-radius: 100%;
 }
 
-.active .type17:before {
+.active .type-primary:before {
     transform: translate(-4px, -6px) rotate(90deg);
+    border-radius: 100%;
 }
 
-.active .type17:after {
+.active .type-primary:after {
     transform: translate(16px, -7px) rotate(90deg);
-}
-
-.active .type18 {
-    transform: rotate(-45deg);
-    background-color: #fff;
-    transition: all 0.6s ease-in-out;
-}
-
-.active .type18:before {
-    transform: translate(0, 0) rotate(90deg);
-}
-
-.active .type18:after {
-    transform: translate(0, 0) rotate(90deg);
+    border-radius: 100%;
 }
 
 .navbar-nav {
