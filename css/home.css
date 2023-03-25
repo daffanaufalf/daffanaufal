@@ -167,7 +167,7 @@
     letter-spacing: 0.12em;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 275px) {
     .navbar-nav {
         justify-content: space-between;
     }
