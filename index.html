@@ -59,13 +59,6 @@
             aria-label="Toggle navigation"
           >
             <div class="navbar-toggler-icon type-primary"></div>
-            <script>
-              $(document).ready(function () {
-                $(document).on("click", ".navbar-toggler", function () {
-                  $(this).toggleClass("active");
-                });
-              });
-            </script>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav text-lg ps-48 gap-3">
@@ -223,5 +216,12 @@
         </div>
       </footer>
     </section>
+    <script>
+      $(document).ready(function () {
+        $(document).on("click", ".navbar-toggler", function () {
+          $(this).toggleClass("active");
+        });
+      });
+    </script>
   </body>
 </html>

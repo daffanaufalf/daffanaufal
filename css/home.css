@@ -166,3 +166,9 @@
     text-decoration: none;
     letter-spacing: 0.12em;
 }
+
+@media (max-width: 767px) {
+    .navbar {
+        background-color: #171717;
+    }
+}
