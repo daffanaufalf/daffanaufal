@@ -119,21 +119,35 @@ nav {
     letter-spacing: 0.08em;
 }
 
-@media (max-width: 820px) {
+/* Setup Responsive */
 
+@media (max-width: 820px) {
     .nav-icon {
         display: none;
     }
 
     .nav-link {
-        font-size: 32px;
+        font-size: 24px;
     }
 
     .header-title {
         color: #737373;
-        font-size: 24px;
+        font-size: 28px;
         font-family: 'Plus Jakarta Sans';
         font-weight: 500;
         margin: 0;
+    }
+
+    .header .btn-download {
+        background-color: #262626;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 32px;
+        font-family: 'Clash Display';
+        font-size: 12px;
+        color: #fafafa;
+        font-weight: 400;
+        text-decoration: none;
+        letter-spacing: 0.08em;
     }
 }
