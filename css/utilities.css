@@ -6,11 +6,14 @@ body {
     border-radius: 100px;
 }
 
+
 /* Container */
+
 .container-fluid {
     padding-right: 16px;
     padding-left: 16px;
 }
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -68,11 +71,19 @@ body {
     }
 
     .pt-lg-3xl {
+        padding-top: 68px;
+    }
+
+    .pt-lg-4xl {
         padding-top: 100px;
     }
 
     .ps-lg-2xl {
         padding-left: 48px;
+    }
+
+    .pb-lg-md {
+        padding-bottom: 32px;
     }
 
     .pb-lg-xl {
@@ -90,12 +101,20 @@ body {
 }
 
 @media (max-width: 820px) {
+    .pt-sm-2xs {
+        padding-top: 8px;
+    }
+
     .pt-sm-xs {
         padding-top: 16px;
     }
 
     .pt-sm-md {
         padding-top: 24px;
+    }
+
+    .pt-sm-xl {
+        padding-top: 32px;
     }
 
     .gap-sm-base {
