@@ -107,9 +107,44 @@ nav {
     margin: 0;
 }
 
+
 .header-title span {
     color: #fafafa;
 }
+
+#typing-effect {
+    overflow: hidden;
+    border-right: .15em solid #fafafa;
+    /* efek pengecakan */
+}
+
+.cursor {
+    border-right: 0.2em solid #fafafa;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        border-color: #fafafa;
+    }
+
+    49% {
+        border-color: #fafafa;
+    }
+
+    50% {
+        border-color: transparent;
+    }
+
+    99% {
+        border-color: transparent;
+    }
+
+    100% {
+        border-color: #fafafa;
+    }
+}
+
 
 .header .btn-download {
     background-color: #262626;
