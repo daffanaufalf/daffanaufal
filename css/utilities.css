@@ -119,11 +119,19 @@ body {
         padding-top: 32px;
     }
 
-    .pb-sm-md {
+    .pb-sm-xs {
         padding-bottom: 16px;
     }
 
+    .pb-sm-md {
+        padding-bottom: 24px;
+    }
+
     /* Gap */
+    .gap-sm-xs {
+        gap: 16px;
+    }
+
     .gap-sm-base {
         gap: 32px;
     }
