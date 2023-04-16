@@ -290,6 +290,10 @@ nav {
         border-radius: 12px;
     }
 
+    .moto-profesional {
+        margin-bottom: 1rem !important;
+    }
+
     .connect {
         display: block;
     }
