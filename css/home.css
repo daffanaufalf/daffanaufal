@@ -233,6 +233,10 @@ nav {
 /* Setup Responsive */
 
 @media (max-width: 820px) {
+    .enter {
+        display: none;
+    }
+    
     hr {
         margin: 0 0 0 0 !important;
     }
