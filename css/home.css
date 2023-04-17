@@ -254,10 +254,13 @@ nav {
 .moto-profesional {
     font-family: 'Uncut Sans Semibold';
     color: #fafafa;
+    margin-bottom: 1rem !important;
 }
 
 .moto-profesional span {
-    font-weight: 500;
+    font-family: 'Uncut Sans Regular';
+    color: #fafafa;
+    margin-bottom: 1rem !important;
 }
 
 .divider {
@@ -357,7 +360,20 @@ nav {
     }
 
     .moto-profesional {
+        font-family: 'Uncut Sans Semibold';
+        color: #fafafa;
         margin-bottom: 1rem !important;
+    }
+
+    .moto-profesional span {
+        font-family: 'Uncut Sans Regular';
+        margin-bottom: 1rem !important;
+    }
+
+    .lets-connect {
+        font-family: 'Uncut Sans Regular';
+        color: #fafafa;
+        margin-bottom: 0px !important;
     }
 
     .connect {
