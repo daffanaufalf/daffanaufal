@@ -252,8 +252,7 @@ nav {
 }
 
 .moto-profesional {
-    font-family: 'Plus Jakarta Sans';
-    font-weight: 400;
+    font-family: 'Uncut Sans Semibold';
     color: #fafafa;
 }
 
@@ -261,18 +260,12 @@ nav {
     font-weight: 500;
 }
 
-.copyright {
-    font-family: 'Plus Jakarta Sans';
-    font-weight: 400;
-    color: #fafafa;
-}
-
 .divider {
     margin: 0 0 0 0 !important;
 }
 
 .lets-connect {
-    font-family: 'Plus Jakarta Sans';
+    font-family: 'Uncut Sans Regular';
     color: #fafafa;
     margin-bottom: 0px !important;
 }
@@ -317,7 +310,7 @@ nav {
     .header-title {
         color: #737373;
         font-size: 22px;
-        font-family: 'Plus Jakarta Sans';
+        font-family: 'Schibsted Grotesk', sans-serif;
         font-weight: 500;
         margin: 0;
     }
@@ -327,7 +320,7 @@ nav {
         justify-content: center;
         align-items: center;
         padding: 16px 32px;
-        font-family: 'Clash Display';
+        font-family: 'Uncut Sans Semibold';
         font-size: 12px;
         color: #fafafa;
         font-weight: 400;
