@@ -355,6 +355,22 @@ nav {
         display: block;
     }
 
+    .about-text {
+        color: #737373;
+        margin: 0;
+        font-family: 'Uncut Sans Regular';
+    }
+
+    .about-text span {
+        color: #fafafa;
+        font-weight: 500;
+    }
+
+    .about-text a {
+        color: #fafafa;
+        font-weight: 500;
+    }
+
     .about .tab {
         display: none;
     }
