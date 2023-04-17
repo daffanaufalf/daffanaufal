@@ -102,7 +102,7 @@ nav {
 .header-title {
     color: #737373;
     font-size: 56px;
-    font-family: 'Plus Jakarta Sans';
+    font-family: 'Schibsted Grotesk', sans-serif;
     font-weight: 500;
     margin: 0;
 }
@@ -148,14 +148,14 @@ nav {
 
 .header .btn-download {
     background-color: #262626;
+    font-family: 'Uncut Sans Semibold';
     justify-content: center;
     align-items: center;
     padding: 16px 32px;
-    font-family: 'Clash Display';
     color: #fafafa;
-    font-weight: 400;
     text-decoration: none;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.02em;
+    text-align: center;
 }
 
 .shots {
@@ -178,6 +178,67 @@ nav {
 
 .img-shots {
     border-radius: 32px;
+}
+
+.avatar {
+    justify-content: center;
+    align-items: center;
+}
+
+.image-wrapper {
+    width: 160px;
+    height: 160px;
+    background-color: #262626;
+    border: 1px solid #737373;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.avatar-pic {
+    padding: 16px;
+}
+
+.avatar-pic img {
+    border-radius: 8px;
+    position: absolute;
+    z-index: 1;
+}
+
+.about {
+    display: flex;
+}
+
+.about-title {
+    color: #fafafa;
+    font-size: 64px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+.about-title span {
+    color: #fafafa;
+    font-size: 64px;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+.about-text {
+    color: #737373;
+    margin: 0;
+    font-family: 'Uncut Sans Regular';
+}
+
+.about-text span {
+    color: #fafafa;
+    font-weight: 500;
+}
+
+.about-text a {
+    color: #fafafa;
+    font-weight: 500;
 }
 
 .divider-full {
@@ -236,7 +297,7 @@ nav {
     .enter {
         display: none;
     }
-    
+
     hr {
         margin: 0 0 0 0 !important;
     }
@@ -292,6 +353,14 @@ nav {
 
     .img-shots {
         border-radius: 12px;
+    }
+
+    .about {
+        display: block;
+    }
+
+    .about .tab {
+        display: none;
     }
 
     .moto-profesional {

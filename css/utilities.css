@@ -78,6 +78,10 @@ body {
         padding-top: 100px;
     }
 
+    .pt-lg-5xl {
+        padding-top: 120px;
+    }
+
     .ps-lg-2xl {
         padding-left: 48px;
     }
@@ -117,6 +121,14 @@ body {
 
     .pt-sm-xl {
         padding-top: 32px;
+    }
+
+    .pt-sm-2xl {
+        padding-top: 64px;
+    }
+
+    .pt-sm-3xl {
+        padding-top: 84px;
     }
 
     .pb-sm-xs {
