@@ -161,11 +161,11 @@ nav {
 .shots {
     position: relative;
     display: inline-block;
-    border-radius: 32px;
+    border-radius: 16px;
 }
 
 .shots::after {
-    border-radius: 32px;
+    border-radius: 16px;
     content: '';
     position: absolute;
     left: 0;
@@ -177,7 +177,7 @@ nav {
 }
 
 .img-shots {
-    border-radius: 32px;
+    border-radius: 16px;
 }
 
 .avatar {
